@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "tasks": [
+        {
+            "label": "Create Environment",
+            "command": "sh ${workspaceFolder}/scripts/create_environment.sh",
+        }
+    ]
+}
