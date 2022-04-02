@@ -6,7 +6,10 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
+FILESDIR      = src
+DESTDIR       = _src
 BUILDDIR      = _build
+TEMPLATEDIR   = _templates
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -18,3 +21,8 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+doc:
+	$(MAKE) clean
+	sphinx-apidoc -e -f -t "$(TEMPLATEDIR)/" -o "$(DESTDIR)/" ../$(FILESDIR)/
+	$(MAKE) html

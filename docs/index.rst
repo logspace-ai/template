@@ -10,7 +10,7 @@ Welcome to Template's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   _src/modules.rst
 
 Indices and tables
 ==================
