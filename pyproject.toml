@@ -5,10 +5,10 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-pytest = "*"
+python = "*"
 
 [tool.poetry.dev-dependencies]
+pytest = "*"
 pylint = "*"
 pre-commit = "*"
 flake8 = "*"

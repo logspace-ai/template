@@ -2,9 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # MacOS
 .DS_Store
+Icon?
 
 # Documentation
 docs/_src/
