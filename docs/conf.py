@@ -10,10 +10,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
-import os
 import sys
+from pathlib import Path
 
-sys.path.insert(0, os.path.abspath("../"))
+import toml
+
+sys.path.append("../src/")
 
 
 # -- Project information -----------------------------------------------------
@@ -23,7 +25,11 @@ copyright = "2022, Logspace"
 author = "Logspace"
 
 # The full version, including alpha/beta/rc tags
-release = "0.1"
+# The full version, including alpha/beta/rc tags
+path = Path(__file__).resolve().parents[1] / "pyproject.toml"
+pyproject = toml.loads(open(str(path)).read())
+version = pyproject["tool"]["poetry"]["version"]
+release = version
 
 
 # -- General configuration ---------------------------------------------------

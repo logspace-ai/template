@@ -6,7 +6,7 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
-FILESDIR      = src
+FILESDIR      = src/mypack
 DESTDIR       = _src
 BUILDDIR      = _build
 TEMPLATEDIR   = _templates

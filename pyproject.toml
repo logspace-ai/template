@@ -11,7 +11,7 @@ include = [
     "LICENSE",
 ]
 packages = [
-    {include = "mypack"}
+    {include = "mypack", from = "src"}
 ]
 
 [tool.poetry.dependencies]
