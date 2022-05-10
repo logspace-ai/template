@@ -8,7 +8,7 @@
         },
         {
             "label": "Create Environment",
-            "command": "poetry install",
+            "command": "poetry install && poetry run pre-commit install",
         },
         {
             "label": "Build Library",
